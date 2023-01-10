@@ -92,9 +92,8 @@ function repeatWord(word, n){
 
     return word.repeat(n);
 }
-let word = 'Hello';
-let n = 3;
-console.log(repeatWord(word, n));
+
+console.log(repeatWord('Hello', 3));
 
 //8.	Write a function that takes two parameters, firstName and lastName, and returns a full name.
 //	The full name should be the first and the last name separated by a space.
@@ -103,9 +102,7 @@ function firstAndLastName(firstName, lastName){
 
     return firstName + lastName;
 }
-let firstName = 'Henry';
-let lastName = ' Smith';
-console.log(firstAndLastName(firstName, lastName));
+console.log(firstAndLastName('Tom', ' Smith'));
 
 //9.	Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
 
@@ -183,6 +180,11 @@ function whatShouldIReadNext(newBooks){
 } 
 let numOfHoursToRead = Math.floor(Math.random() * 5);    
 let newBooks = ['Magicians', 'The Shadow of The Gods', 'The City of Brass', 'Spellslinger', 'Mother of Learning'];
+
+    if(numOfHoursToRead < 1){
+        console.log("You cant read today")
+    } else 
+    
 console.log(`The book you should read next is: ${whatShouldIReadNext(newBooks)}, you can read this book for up to ${numOfHoursToRead} hours.`);
 
 //this function allows me to find a book to read without have to pick it myself, which can be a problem at times. So this function will randomly pick a
